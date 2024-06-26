@@ -8,23 +8,92 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
+    <title>Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color:	 #050535">
-      <div class="navitems-logo collaps navbar-collapse"><span class="navLogoIcons navbar-nav">🚢</span><i class="text-white nav-item">Travel</i><span class="logostyle"><i style="color:rgb(214, 103, 39)">Go</i></span>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg text-light " style="background-color:	 #050535">
+      <div class="container-fluid">
+        <span class="fs-4">🚢</span>
+        <a class="navbar-brand text-white  m-0 p-0 fs-5" href="#">Travel</a><a class="navbar-brand text-warning fst-italic fs-5">Go</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#"><i class="fa-solid fa-house-chimney-window homeIcon text-warning pe-1 fs-5"></i>Home</a>
+            </li>
+            <!-- About Us -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./Components/AboutUs.jsx"><i class="fa-solid fa-heart heartIcon text-danger pe-1 fs-5"></i>About Us</a>
+            </li>
+            <!-- Service -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"><i class="fa-solid fa-chalkboard-user userIcon text-success pe-1 fs-5"></i>Services</a>
+            </li>
+            <!-- Testimonial -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#"><i class="fa-solid fa-star starIcon text-warning pe-1 fs-5"></i>Testimonials</a>
+            </li>
+            <!-- Contact Us -->
+            <li class="nav-item">
+              <a class="nav-link text-white "  href="#"><i class="fa-solid fa-envelope emailIcon text-info pe-1 fs-5"></i>Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="navitems"><span class="navIcons"><i class="fa-solid fa-house-chimney-window homeIcon fontNavIcon" style="color:rgb(214, 103, 39)"></i></span><a href="./index.html" class="text-white">Home</a></div>
-      <div class="navitems"><span class="navIcons"><i class="fa-solid fa-heart heartIcon fontNavIcon "style="color:rgb(156, 3, 105)"></i></span><a href="./pages/aboutus.html" class="text-white">About Us</a></div>
-      <div class="navitems"><span class="navIcons"></i><i class="fa-solid fa-chalkboard-user userIcon fontNavIcon" style="color:rgb(18, 148, 38)"></i></span><a href="./pages/services.html" class="text-white">Services</a></div>
-      <div class="navitems"><span class="navIcons"><i class="fa-solid fa-star starIcon fontNavIcon" style="color:rgb(178, 178, 12)"></i></span><a href="./pages/testimonials.html" class="text-white text-left">Testimonials</a></div>
-      <div class="navitems"><span class="navIcons"><i class="fa-solid fa-envelope emailIcon fontNavIcon" style="color:rgb(37, 160, 201)"></i></span><a href="./pages/contactus.html" class="text-white">Contact Us</a></div>
-  </nav>
+    </nav>
 
+    <!-- style="background-color:	 #050535" -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="mx-5 my-3 fs-6" >
+      Welcome to Travel<span class="text-warning fst-italic fs-5">Go</span> Tours & Travel! 80% of our profits are used to support local development projects through our NGO, Reality Gives. All of our tours provide fun, authentic experiences around India. We are an award-winning and responsible tour operator based in Mumbai and Delhi. Travel around India with us!
+      To ensure that our tours are conducted in a sensitive way that respects the privacy and  dignity of the local residents, we have developed a series of best practices for all our tours.
+    </div>
+    <!-- Home photos -->
+    <div class="mx-5" >
+      <div class="section1Image grid row row-cols-2 row-cols-lg-5 mb-3">
+        <img class="travelSample g-col-2 col-2 rounded-1" src="./asset/asset/travelimage9.jpg" alt="">
+        <img class="travelSample g-col-2 col-2 rounded-1" src="./asset/asset/travelimage8.webp" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage7.webp" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage6.webp" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage5.jpg" alt="">
+      </div>
 
- 
+      <div class="section2Image grid row row-cols-2 row-cols-lg-5 mb-3">
+        <img class="travelSample g-col-2 col-2 " src="./asset/asset/travelimage18.webp" alt="">
+        <img class="travelSample g-col-2 col-2 " src="./asset/asset/travelimage17.jpg" alt="">
+        <img class="travelSample g-col-2 col-2 " src="./asset/asset/travelimage3.jpg" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/boardofmembers2.jpg" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage20.webp" alt="">
+      </div>
+
+      <div class="section3Image grid row row-cols-2 row-cols-lg-5 mb-3">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage10.jpg" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage11.jpg" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage13.jpg" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage16.avif" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage15.jpg" alt="">
+      </div>
+
+      <div  class="section3Image grid row row-cols-2 row-cols-lg-5 mb-3">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage14.jpg" alt="">
+        <img class="travelSample g-col-2 col-2 " src="./asset/asset/travelimage19.webp" alt="">
+        <img class="travelSample g-col-2 col-2" src="./asset/asset/travelimage4.png" alt="">
+        <img class="travelSample g-col-2 col-2 " src="./asset/asset/travelimage3.jpg" alt="">
+        <img class="travelSample g-col-2 col-2 " src="./asset/asset/travelimage5.jpg" alt="">
+      </div>
+
+      <!-- <div class="section4Image row-cols-6">
+        <img class="travelSample col" src="./asset/asset/travelimage12.jpg" alt="">
+        <img class="travelSample col" src="./asset/asset/travelimage1.jpg">
+      </div> -->
+    </div>
   </body>
 </html>
